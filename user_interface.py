@@ -7,7 +7,7 @@ operator = {"1": "+", "2": "-", "3": "*", "4": "/", "5": "^", "6": "sqrt"}
 
 
 def menu():
-    print("Calculator welcomes you!\n")
+    print("Hi\n")
     while True:
         type_num = input("Working with:"
                          "\n1 - rational"
@@ -18,11 +18,11 @@ def menu():
                 menu_calc(type_num)
             case "3":
                 logging.info("Stop program.")
-                print("Goodbye! See you soon sun!")
+                print("Goodbye")
                 break
             case _:
-                logging.warning("Main menu, wrong item selected.")
-                print("The menu item is not recognized. Try again!")
+                logging.warning("Wrong item selected.")
+                print("Try again")
 
 
 def menu_calc(data_type):
@@ -86,7 +86,7 @@ def menu_calc(data_type):
                 print()
                 break
             case _:
-                logging.warning(f"Main menu, wrong item selected.")
+                logging.warning(f"Wrong item selected.")
                 print("Error. Try again")
                 continue
         if result != "q":
@@ -113,5 +113,5 @@ def menu_divisions():
                 print()
                 return 0
             case _:
-                logging.warning(f"Main menu, wrong item selected.")
+                logging.warning(f"Wrong item selected.")
                 print("Error. Try again")
